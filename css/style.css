@@ -1,0 +1,233 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.menu{
+ width: 100%;
+ height: auto;
+ color:#fff;
+ background: linear-gradient(to right, #F302F8, #6E02F8);
+ font-family: sans-serif;
+ font-family: inter;
+ text-transform: uppercase;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    align-items: center;
+    
+}
+.menu li{
+    margin-left: 10px;
+    list-style: none;
+    
+}
+
+.menu a{
+    color: #fff;
+}
+
+
+.logo{
+   display: flex;
+   align-items: center;
+    font-size: 15px;
+}
+
+
+
+/* CAIXA DE SIMULAR INVESTIMENTO*/
+.simular-btn{
+    width: 45px;
+    height: 45px;
+    background-color: #F302F8;
+    
+    border-radius: 50%;
+    padding: 5px;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.simular-btn:hover{
+    background-color: #78047a;
+}
+.caixa-simular{
+    min-width: 200px;
+    background-color: #c3c3c3;
+    margin-right:10px;
+    padding:10px;
+    border-radius:7px;
+    height: 275px;
+    margin-bottom: 20px;
+    
+}
+
+.bt-cx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.caixa-simular h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-bottom: 1px solid #3a3939;
+    
+}
+
+.active{
+    visibility: show;
+}
+.ocult{
+    display: none;
+}
+
+.item-form{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: sans-serif;
+    
+}
+
+.item-form .barra{
+    height:30px;
+    width: 100%;
+    border-radius:5px;
+    padding-right: 0px;
+}
+
+.item-form .radio-btn {
+    display: inline-block;
+    margin: 2px;;
+    margin-right: 10px;
+    
+    
+    
+}
+.btn{
+   width: 100%;
+    background: linear-gradient(to right, #F302F8, #6E02F8);
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, #8c028f, #3c0288);
+}
+
+/* Resultados */
+.resultados{
+    width: 380px;
+    background-color: #c3c3c3;
+    padding: 10px;
+    
+}
+
+.result{
+    background-color: #fffffff3;
+    padding: 7px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.result h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 1px solid #c3c3c3;
+}
+/* INFORMES */
+
+.informes{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    width: 100%;
+    padding:20px;
+    font-family: sans-serif;
+}
+
+.info h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color:  #F302F8;
+}
+
+.info p{
+    margin-bottom: 2px;
+}
+
+.info{
+ min-width: 33%;
+ text-align: justify;
+ padding: 20px;
+ line-height: 1.5em;
+}
+
+.area_info h2{
+   text-transform: uppercase;
+   font-family: sans-serif;
+   color: #3c0288;
+   font-size: 20px;
+   text-align: center;
+   padding: 20px;
+}
+.area_info{
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.area_info iframe{
+    width: 100%;
+    height:500px;
+    
+}
+footer p{
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 5px;
+    color: #F302F8;
+    text-align: center;
+    font-family:sans-serif;
+}
+@media screen and (max-width:700px){
+    .menu-item{
+        flex-direction: column;   
+    }
+    .menu li{
+        margin: 10px;
+        border-bottom: #3c0288 5px solid;
+    }
+
+    main{
+       flex-direction: column;
+    }
+
+    .informes{
+        flex-direction: column;
+    }
+
+    .area_info iframe{
+        height:250px;
+        
+    }
+}

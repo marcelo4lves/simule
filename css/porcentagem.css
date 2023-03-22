@@ -1,0 +1,73 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cx{
+    
+    width: 50%;
+}
+
+.caixa-porcent{
+    flex-grow: 2;
+    background-color: #c3c3c3;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+.caixa-porcent h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-align: center;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.caixa-porcent p{
+    margin-top: 10px;
+}
+
+.caixa-porcent input{
+    width: 100px;
+    height:25px;
+}
+
+.btn-calc{
+    width: 100%;
+    background: linear-gradient(to right, #F302F8, #6E02F8);
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.btn-calc:hover{
+    background: linear-gradient(to right, #8c028f, #3c0288);
+    transform: 0.5s;
+}
+
+#r1,#r2,#r3,#r4{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px solid #0f0;
+}
+
+footer p{
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: -250px;
+    color: #F302F8;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+@media screen and (max-width:700px) {
+    .cx{
+    
+        width: 100%;
+    }
+}
